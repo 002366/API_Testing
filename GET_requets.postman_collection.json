@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "5ab3559b-090f-49e0-a2b6-69fecc6e82d2",
+		"name": "GET_requets",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sample_Get_request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "55acadb0-935c-4e64-875f-88dca675e35d",
+						"exec": [
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"    ",
+							"    ",
+							"});",
+							"pm.environment.get(\"variable_key\");",
+							"",
+							"",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				},
+				"description": "from guru99.com taken"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
